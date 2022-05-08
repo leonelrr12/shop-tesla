@@ -12,7 +12,7 @@ export const Page404 = () => {
         sx={{ flexDirection: { xs: 'column', sm: 'row' }}}
       >
         <Typography variant='h1' component='h1' fontSize={80} fontWeight={200}>404 |</Typography>
-        <Typography marginLeft={ 2 }>Página no encontrada jjjjjjj</Typography>
+        <Typography marginLeft={ 2 }>Página no encontrada</Typography>
       </Box>
     </ShopLayout>
   )

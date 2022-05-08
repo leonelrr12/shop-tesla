@@ -6,6 +6,7 @@ import { OrderSumary } from '../../components/cart/OrderSummary';
 import { CreditCardOffOutlined, CreditScoreOutlined } from '@mui/icons-material';
 
 const OrderPage = () => {
+  
   return (
     <ShopLayout title='Resumen de la Orden No.' pageDescription='Su carrito de compras'>
       <Typography variant='h1' component='h1'>Orden: 12358</Typography>

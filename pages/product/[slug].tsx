@@ -5,10 +5,22 @@ import { ProductSlideshow } from '../../components/products';
 import { SizeSelector } from '../../components/products/SizeSelector';
 import { ItemCounter } from '../../components/ui';
 import { initialData } from '../../database/products';
+import { useRouter } from 'next/router';
+import { useProducts } from '../../hooks';
+import { FullScreenLoading } from '../../components/ui/FullScreenLoading';
 
 const product = initialData.products[0];
 
 const ProductPage = () => {
+
+  // const router = useRouter();
+  // const { products: product, isLoading } = useProducts(`/products/${ router.query.slug }`)
+
+  // if(isLoading) {
+  //   return <FullScreenLoading />
+  // }
+  // console.log(product)
+
   return (
     <ShopLayout title={ product.title } pageDescription={ product.description }>
       <Grid container spacing={ 3 }>
